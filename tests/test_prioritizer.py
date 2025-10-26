@@ -1,9 +1,9 @@
-# tests/test_prioritizer.py
+
 import os
 import sys
 import math
 
-# Asegurar que 'src' esté en sys.path para poder importar modules.*
+
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "src"))
 if ROOT not in sys.path:
     sys.path.insert(0, ROOT)
@@ -28,22 +28,20 @@ def test_prioritizer_basic_order_and_scores():
 
     resultado = priorizar(entradas)
 
-    # Debe retornar 3 elementos
     assert len(resultado) == 3
 
-    # Calcular puntajes esperados manualmente
+
     esperado_A = round(10 / (2 + 1), 2)  # 3.33...
     esperado_B = round(5  / (1 + 1), 2)  # 2.5
     esperado_C = round(8  / (4 + 2), 2)  # 1.33...
 
-    # Comprobar que los puntajes coinciden con lo calculado
-    # (usar float porque priorizar guarda valores numéricos)
+
     puntajes = {item["nombre"]: item["puntaje"] for item in resultado}
     assert almost_equal(puntajes["A"], esperado_A)
     assert almost_equal(puntajes["B"], esperado_B)
     assert almost_equal(puntajes["C"], esperado_C)
 
-    # Comprobar el orden descendente por puntaje
+    
     nombres_ordenados = [item["nombre"] for item in resultado]
     assert nombres_ordenados == ["A", "B", "C"]
 
@@ -64,7 +62,7 @@ def test_prioritizer_with_numeric_inputs_and_rounding():
     esperado_X = round(7 / (3 + 2.5), 2)
     esperado_Y = round(7 / (2 + 3.0), 2)
 
-    # Comparación por nombre
+    
     mapa = {item["nombre"]: item["puntaje"] for item in resultado}
     assert almost_equal(mapa["X"], esperado_X)
     assert almost_equal(mapa["Y"], esperado_Y)

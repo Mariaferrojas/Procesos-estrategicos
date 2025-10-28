@@ -6,7 +6,7 @@ El objetivo principal consiste en priorizar iniciativas estratégicas de una org
 
 ### 👥 Integrantes y responsabilidades
 - **María Fernanda Rojas** (Líder técnica)
-- **(Heidy)
+- **Heidy Lizeth Vivas** 
 - ** (Andrey)
 - ** (Dayana)
 ---
@@ -23,7 +23,7 @@ Se requiere un método **objetivo y sistematizado** que mejore la toma de decisi
 
 ---
 
-## ✅ Solución Propuesta
+##  Solución Propuesta
 
 Se desarrolló un **software en Python** que:
 
@@ -64,7 +64,7 @@ PROCESOS-ESTRATEGICOS/
 
 ---
 
-## 🧪 Temas de Python aplicados
+##  Temas de Python aplicados
 
 - Funciones
 - Módulos e importaciones
@@ -89,26 +89,26 @@ PROCESOS-ESTRATEGICOS/
 
 ---
 
-## ▶️ Manual de Usuario
+##  Manual de Usuario
 
-### 1️⃣ Clonar repositorio  
+### 1 Clonar repositorio  
 ```bash
 git clone <URL-del-repositorio>
 cd PROCESOS-ESTRATEGICOS
 ```
 
-### 2️⃣ Crear entorno virtual (opcional, recomendado)
+### 2 Crear entorno virtual (opcional, recomendado)
 ```bash
 python -m venv venv
 venv\Scripts\activate
 ```
 
-### 3️⃣ Instalar dependencias
+### 3 Instalar dependencias
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4️⃣ Ejecutar el programa
+### 4 Ejecutar el programa
 ```bash
 python src/main.py
 ```
@@ -152,7 +152,7 @@ Todos los integrantes realizaron **al menos 3 commits** significativos y **Pull 
 Cada función del software se implementó en una rama distinta 
 ---
 
-## 🚀 Mejoras Futuras
+##  Mejoras Futuras
 
 - Interfaz gráfica de usuario (GUI)
 - Ajustes de modelos de priorización con más criterios

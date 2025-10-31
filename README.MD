@@ -53,8 +53,13 @@ PROCESOS-ESTRATEGICOS/
 │  │  ├─ prioritizer.py
 │  │  └─ csv_report.py
 │  └─ data/
+│     ├─ bitacora.csv
 │     ├─ iniciativas.csv
-│     └─ reporte.csv (generado automáticamente)
+│     ├─ metricas.csv
+│     ├─ reporte.csv (generado automáticamente)
+│     └─ top_iniciativas.csv
+│     
+│
 │
 ├─ tests/
 ├─ requirements.txt
@@ -116,13 +121,16 @@ python src/main.py
 ### ✅ Archivo generado
 
 Ruta:
-```
+```.
+ `src/data/top_iniciativas.csv` 
+ `src/data/metricas.csv` 
+ `src/data/bitacora.csv` 
 src/data/reporte.csv
 ```
 
 Columnas esperadas:
 ```
-nombre  impacto  esfuerzo  costo  prioridad
+nombre  impacto  esfuerzo  costo  puntaje
 ```
 
 Ejemplo de resultado:  
@@ -144,10 +152,8 @@ Todos los integrantes realizaron **al menos 3 commits** significativos y **Pull 
 
 | Integrante | Aporte | Evidencia |
 |-----------|--------|-----------|
-| María Fernanda | main.py, estructura, README | ✅ Commits y PR aprobados |
-| Heidy | data_loader.py, data CSV | ✅ Commits con validaciones |
-| Andrey | prioritizer.py | ✅ +3 commits de mejoras incrementales |
-| Dayana | validator.py, csv_report.py, `__init__.py` | ✅ PR revisado y mergeado |
+| María Fernanda | main.py,prioritizer.py,estructura, README | ✅ Commits y PR aprobados |
+| Heidy | data_loader.py, data CSV,csv_report.py | ✅ Commits con validaciones |
 
 Cada función del software se implementó en una rama distinta 
 ---

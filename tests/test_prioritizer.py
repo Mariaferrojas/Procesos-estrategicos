@@ -14,12 +14,7 @@ def almost_equal(a, b, tol=1e-9):
     return abs(a - b) <= tol
 
 def test_prioritizer_basic_order_and_scores():
-    """
-    Verifica que:
-    - Se calcule el puntaje esperado (impacto / (esfuerzo + costo))
-    - Se ordene de mayor a menor por 'puntaje'
-    - Los puntajes estén redondeados a 2 decimales
-    """
+    
     entradas = [
         {"nombre": "A", "impacto": "10", "esfuerzo": "2", "costo": "1"},
         {"nombre": "B", "impacto": "5",  "esfuerzo": "1", "costo": "1"},
@@ -28,7 +23,7 @@ def test_prioritizer_basic_order_and_scores():
 
     resultado = priorizar(entradas)
 
-   
+
     assert len(resultado) == 3
 
     esperado_A = round(10 / (2 + 1), 2)  
@@ -46,10 +41,7 @@ def test_prioritizer_basic_order_and_scores():
     assert nombres_ordenados == ["A", "B", "C"]
 
 def test_prioritizer_with_numeric_inputs_and_rounding():
-    """
-    Verifica que la función acepte valores numéricos (no solo strings)
-    y que el redondeo a 2 decimales se aplique correctamente.
-    """
+    
     entradas = [
         {"nombre": "X", "impacto": 7, "esfuerzo": 3, "costo": 2.5},
         {"nombre": "Y", "impacto": 7, "esfuerzo": 2, "costo": 3.0}
@@ -68,6 +60,6 @@ def test_prioritizer_with_numeric_inputs_and_rounding():
     assert almost_equal(mapa["Y"], esperado_Y)
 
 def test_prioritizer_empty_list_returns_empty():
-    """Verifica que una lista vacía devuelva una lista vacía."""
+
     resultado = priorizar([])
     assert resultado == []

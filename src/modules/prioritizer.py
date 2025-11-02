@@ -18,23 +18,29 @@ def calcular_puntaje(impacto, esfuerzo, costo):
         return 0.0
 
 def priorizar(iniciativas):
-    
+    """
+    Valida y prioriza las iniciativas, asignando puntajes y ordenándolas.
+    """
     iniciativas_validas = []
+
     for ini in iniciativas:
         try:
             impacto = float(ini["impacto"])
             esfuerzo = float(ini["esfuerzo"])
             costo = float(ini["costo"])
         except (KeyError, ValueError, TypeError):
+            print(f"❌ Iniciativa inválida descartada: {ini}")
             continue
+
         if impacto <= 0 or esfuerzo <= 0 or costo <= 0:
+            print(f"⚠️ Valores no válidos en: {ini['nombre'] if 'nombre' in ini else 'Desconocido'}")
             continue
 
         ini["puntaje"] = calcular_puntaje(impacto, esfuerzo, costo)
         iniciativas_validas.append(ini)
 
     iniciativas_validas.sort(key=lambda x: x["puntaje"], reverse=True)
-    return iniciativas_validas
+    return desempatar(iniciativas_validas)
 
 def desempatar(iniciativas):
     iniciativas.sort(key=lambda x: (x["puntaje"], x["impacto"]), reverse=True)

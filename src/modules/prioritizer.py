@@ -1,3 +1,4 @@
+# Funcion que calcula la prioridad de una iniciativa segun su puntaje 
 def calcular_puntaje(impacto, esfuerzo, costo):
     try:
         return round(impacto / (esfuerzo + costo), 3)

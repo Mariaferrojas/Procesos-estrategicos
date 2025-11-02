@@ -1,11 +1,22 @@
-# Funcion que calcula la prioridad de una iniciativa segun su puntaje 
+"""
+📌 Módulo: Prioritizer
+Función: Calcular y ordenar la prioridad de iniciativas estratégicas.
+"""
+
 def calcular_puntaje(impacto, esfuerzo, costo):
+    """
+    Calcula un puntaje basado en la relación entre impacto, esfuerzo y costo.
+    Retorna un número redondeado a 3 decimales.
+    """
     try:
         return round(impacto / (esfuerzo + costo), 3)
     except ZeroDivisionError:
+        print("⚠️ Error: División por cero detectada. Puntaje asignado = 0.0")
         return 0.0
-    except Exception:
+    except Exception as e:
+        print(f"⚠️ Error inesperado al calcular puntaje: {e}")
         return 0.0
+
 def priorizar(iniciativas):
     
     iniciativas_validas = []

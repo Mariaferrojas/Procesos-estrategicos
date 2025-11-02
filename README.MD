@@ -154,7 +154,7 @@ Todos los integrantes realizaron **al menos 3 commits** significativos y **Pull 
 |-----------|--------|-----------|
 | María Fernanda | main.py,prioritizer.py,estructura, README | ✅ Commits y PR aprobados |
 | Heidy | data_loader.py, data CSV,csv_report.py | ✅ Commits con validaciones |
-| Dayana | mejoras,estructura priorizador.py|  ✅ Commits co validaciones  |
+| Dayana | mejoras,estructura priorizador.py|  ✅ Commits con validaciones  |
 
 Cada función del software se implementó en una rama distinta 
 ---

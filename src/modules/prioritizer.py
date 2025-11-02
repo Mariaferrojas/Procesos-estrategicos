@@ -45,3 +45,5 @@ def priorizar(iniciativas):
         
     iniciativas_validas.sort(key=lambda x: x["puntaje"], reverse=True)
     return desempatar(iniciativas_validas)
+#  Mensaje para confirmar ejecución
+print("✅ Prioritizer ejecutado correctamente por Dayana.")

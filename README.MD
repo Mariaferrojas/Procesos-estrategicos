@@ -136,20 +136,19 @@ nombre  impacto  esfuerzo  costo  puntaje
 Ejemplo de resultado:  
 Iniciativas ordenadas desde la más prioritaria.
 
----
+----
 
-## 📸 Evidencias de Funcionamiento
+## 📸 Evidencias de Funcionamiento 
 
-- [Ejecución en consola mostrando el cálculo y ordenamiento](src/imagenes/ejecucion.png) 
-[!](src/imagenes/finalizado.png)
-[!](src/imagenes/Resumen.png)
+- ![Ejecución en consola mostrando el cálculo y ordenamiento](src/imagenes/ejecucion.png) 
+- ![Finalizado](src/imagenes/finalizado.png)
+- ![Resumen](src/imagenes/Resumen.png)
+- ![Archivo `reporte.csv` generado automáticamente](src/imagenes/reporte.png)
 
-- [Archivo `reporte.csv` generado automáticamente](src/imagenes/reporte.png)
 
+----
 
----
-
-## 🤝 Trabajo Colaborativo
+##  Trabajo Colaborativo
 
 Todos los integrantes realizaron **al menos 3 commits** significativos y **Pull Requests** revisados antes del merge en `main`.
 

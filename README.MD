@@ -140,9 +140,12 @@ Iniciativas ordenadas desde la más prioritaria.
 
 ## 📸 Evidencias de Funcionamiento
 
-- Ejecución en consola mostrando el cálculo y ordenamiento
-- Archivo `reporte.csv` generado automáticamente
-- Estructura modular funcionando correctamente
+- [Ejecución en consola mostrando el cálculo y ordenamiento](src/imagenes/ejecucion.png) 
+[!](src/imagenes/finalizado.png)
+[!](src/imagenes/Resumen.png)
+
+- [Archivo `reporte.csv` generado automáticamente](src/imagenes/reporte.png)
+
 
 ---
 

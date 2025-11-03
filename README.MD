@@ -7,7 +7,7 @@ El objetivo principal consiste en priorizar iniciativas estratégicas de una org
 ### 👥 Integrantes y responsabilidades
 - **María Fernanda Rojas** (Líder técnica)
 - **Heidy Lizeth Vivas** 
-- ** (Andrey)
+- **Andrey Llanos**
 - **Dayana Soriano Ruiz**
 ---
 
@@ -122,10 +122,11 @@ python src/main.py
 
 Ruta:
 ```.
- `src/data/top_iniciativas.csv` 
- `src/data/metricas.csv` 
- `src/data/bitacora.csv` 
-src/data/reporte.csv
+ src/data/reporte.csv          → Reporte general con todas las iniciativas
+src/data/top_iniciativas.csv  → Top 3 iniciativas priorizadas
+src/data/metricas.csv         → Métricas generadas (si aplica)
+src/data/bitacora.csv         → Registro de ejecución
+
 ```
 
 Columnas esperadas:
@@ -140,11 +141,7 @@ Iniciativas ordenadas desde la más prioritaria.
 
 ## 📸 Evidencias de Funcionamiento 
 
-- ![Ejecución en consola mostrando el cálculo y ordenamiento](src/imagenes/ejecucion.png) 
-- ![Finalizado](src/imagenes/finalizado.png)
-- ![Resumen](src/imagenes/Resumen.png)
-- ![Archivo `reporte.csv` generado automáticamente](src/imagenes/reporte.png)
-
+- ![Ejecución en consola mostrando el cálculo y ordenamiento](src/imagenes/Evidencia_ejecucion_prioritizer.png)
 
 ----
 
@@ -154,9 +151,12 @@ Todos los integrantes realizaron **al menos 3 commits** significativos y **Pull 
 
 | Integrante | Aporte | Evidencia |
 |-----------|--------|-----------|
-| María Fernanda | main.py,prioritizer.py,estructura, README | ✅ Commits y PR aprobados |
-| Heidy | data_loader.py, data CSV,csv_report.py | ✅ Commits con validaciones |
-| Dayana | mejoras,estructura priorizador.py|  ✅ Commits con validaciones  |
+| María Fernanda | main.py, prioritizer.py, estructura, README | ✅ Commits y PR aprobados |
+| Heidy | data_loader.py, data CSV, csv_report.py | ✅ Commits con validaciones |
+| Dayana | mejoras, estructura prioritizer.py | ✅ Commits con validaciones |
+| Andrey Llanos | Mejoras al `prioritizer.py`, cálculo del Top 3 e impresión personalizada | ✅ Commits con ejecución y reporte funcional |
+
+
 
 Cada función del software se implementó en una rama distinta 
 ---

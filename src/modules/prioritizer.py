@@ -63,4 +63,15 @@ def priorizar(iniciativas):
     iniciativas_validas.sort(key=lambda x: x["puntaje"], reverse=True)
     return desempatar(iniciativas_validas)
 #  Mensaje para confirmar ejecución
-print("✅ Prioritizer ejecutado correctamente por Dayana.")
+print("\n🔹 RESULTADO DE PRIORIZACIÓN 🔹")
+for i, ini in enumerate(resultado_final, 1):
+   print(f"{i}. {ini['nombre']} | Puntaje: {ini['puntaje']} | Impacto: {ini['impacto']} | Esfuerzo: {ini['esfuerzo']} | Costo: {ini['costo']}")
+
+# 🏆 Mostrar el Top 3 por puntaje
+print("\n🏆 Top 3 iniciativas por puntaje:")
+top_3 = resultado_final[:3]  # Toma las tres primeras
+for ini in top_3:
+    print(f"- {ini['nombre']} | Puntaje: {ini['puntaje']}")
+
+print("\n✅ Prioritizer ejecutado correctamente por Andrey Llanos.")
+
